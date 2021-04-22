@@ -1,140 +1,25 @@
 
-var dataSet = [
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Rabbil Hasan", "new", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"],
-  ["10118000024", "CIB Status Request", "Akash", "old", "Approved", "Achieved","Jan 6 2020 6:00PM","Jan 6 2020 12:06PM","Dhaka"]
- 
-  ];
-  
-  $(document).ready(function () {
-  var table = $('#dt-select').DataTable({
-  data: dataSet,
-  columns: [{
-  title: "Reference"
-  },
-  {
-  title: "Type"
-  },
-  {
-  title: " Name"
-  },
-  {
-  title: "Status"
-  },
-  {
-  title: "Approval"
-  },
-  {
-  title: "SLA"
-  }
-  ,
-  {
-  title: "Target"
-  }
-  ,
-  {
-  title: "Request"
-  }
-  ,
-  {
-  title: "Branch"
-  }
-  ],
-  
-  dom: 'Bfrtip',
-  select: true,
-  buttons: [{
-  text: 'Select all',
-  action: function () {
-  table.rows().select();
-  }
-  },
-  {
-  text: 'Select none',
-  action: function () {
-  table.rows().deselect();
-  }
-  }
-  ]
-  });
-  });
 
+$(document).ready(function () {
+  $('#VisitorDt').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
 
-  $(document).ready(function () {
-    var table = $('#dt-select2').DataTable({
-    data: dataSet,
-    columns: [{
-    title: "Reference"
-    },
-    {
-    title: "Type"
-    },
-    {
-    title: " Name"
-    },
-    {
-    title: "Status"
-    },
-    {
-    title: "Approval"
-    },
-    {
-    title: "SLA"
-    }
-    ,
-    {
-    title: "Target"
-    }
-    ,
-    {
-    title: "Request"
-    }
-    ,
-    {
-    title: "Branch"
-    }
-    ],
-    
-    dom: 'Bfrtip',
-    select: true,
-    buttons: [{
-    text: 'Select all',
-    action: function () {
-    table.rows().select();
-    }
-    },
-    {
-    text: 'Select none',
-    action: function () {
-    table.rows().deselect();
-    }
-    }
-    ]
+function getServicesData(){
+  axios.get('/serviceget')
+    .then(function (response) {
+      var jsonData = response.data;
+      $.each(jsonData, function (i, item) {
+        $('<tr>').html(
+          "<td><img class='table-img' src=" + jsonData[i].service_img + "></td>" +
+          "<td>" + jsonData[i].service_name + "</td>" +
+          "<td>" + jsonData[i].service_des + "</td>" +
+          "<td><a href='' ><i class='fas fa-edit'></i></a></td>" +
+          "<td><a href='' ><i class='fas fa-trash-alt'></i></a></td>"
+
+        ).appendTo('#service_table')
+      })
+    }).catch(function (error) {
+
     });
-    });
-
-    $(document).ready(function () {
-      $('#VisitorDt').DataTable();
-      $('.dataTables_length').addClass('bs-select');
-      });
+}
