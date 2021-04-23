@@ -78,3 +78,13 @@ padding: 1% 1% 1% 1% ;
 .tab-margin{
 margin: 0px  !important;
 }
+
+.table-img{
+	width:60px;
+	height:auto;
+}
+
+.loading-icon{
+	width: 100px;
+	height: auto;
+}
