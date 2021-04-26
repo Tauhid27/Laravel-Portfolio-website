@@ -12,3 +12,5 @@ Route::get('/visitor',[VisitorController::class, 'VisitorIndex']);
 Route::get('/services',[ServiceController::class, 'ServiceIndex']);
 Route::get('/serviceget',[ServiceController::class, 'getServicesData']);
 Route::post('/servicedelete',[ServiceController::class, 'ServiceDelete']);
+Route::post('/servicedetails',[ServiceController::class, 'getServicesDetails']);
+Route::post('/serviceupdate',[ServiceController::class, 'ServiceUpdata']);
