@@ -47,7 +47,7 @@
 
 
 
-<!-- add new  -->
+<!-- add new course  -->
 <div class="modal fade" id="addCourseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -80,6 +80,23 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- delete Modal -->
+<div class="modal fade" id="deleteCourseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+
+			<div class="modal-body text-center p-3">
+				<h5 class="mt-4">Do you want to delete?</h5>
+				<h5 id="CourseDeleteId" class="mt-4"></h5>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">No</button>
+				<button id="CourseDeleteConfirmBtn" type="button" class="btn btn-sm btn-danger">Yes</button>
+			</div>
+		</div>
+	</div>
 </div>
 
 @endsection
