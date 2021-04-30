@@ -253,7 +253,7 @@ function ServiceUpdatDetails(DetailsId) {
 }
 
 
-//Services  Modal Save Btn
+//Services Edit  Modal Save Btn
 $('#ServiceeditConfirmBtn').click(function() {
 
     var id = $('#ServiceEditId').html();

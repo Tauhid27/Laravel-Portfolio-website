@@ -14,7 +14,7 @@
                         <th class="th-sm">Fee</th>
                         <th class="th-sm">Class</th>
                         <th class="th-sm">Enroll</th>
-                        <th class="th-sm">Details</th>
+                       
                         <th class="th-sm">Edit</th>
                         <th class="th-sm">Delete</th>
                     </tr>
@@ -97,6 +97,44 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<!-- update course  -->
+<div class="modal fade" id="updateCourseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Course</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body  text-center">
+            <h5 id="CourseEditId" class="mt-4"></h5>
+                <div id="CourseEditForm" class="container d-none">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="CourseNameupdateId" type="text" id="" class="form-control mb-3" placeholder="Course Name">
+                            <input id="CourseDesupdateId" type="text" id="" class="form-control mb-3" placeholder="Course Description">
+                            <input id="CourseFeeupdateId" type="text" id="" class="form-control mb-3" placeholder="Course Fee">
+                            <input id="CourseEnrollupdateId" type="text" id="" class="form-control mb-3" placeholder="Total Enroll">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="CourseClassupdateId" type="text" id="" class="form-control mb-3" placeholder="Total Class">
+                            <input id="CourseLinkupdateId" type="text" id="" class="form-control mb-3" placeholder="Course Link">
+                            <input id="CourseImgupdateId" type="text" id="" class="form-control mb-3" placeholder="Course Image">
+                        </div>
+                    </div>
+                </div>
+                <img id="CourseEditLoader" class="loading-icon m-5" src="{{asset('images/loader.svg')}}" alt="">
+                 <h5 id="CourseEditWrong" class="d-none">Somewhing Went Wrong !</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Cancel</button>
+                <button id="CourseEditConfirmBtn" type="button" class="btn  btn-sm  btn-danger">Save</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 @endsection
