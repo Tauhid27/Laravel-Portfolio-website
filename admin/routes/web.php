@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeControll;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\ProjectController;
 
 
 Route::get('/',[HomeControll::class, 'HomeIndex']);
@@ -26,3 +27,13 @@ Route::post('/Coursesdelete',[CoursesController::class, 'CoursesDelete']);
 Route::post('/Coursesdetails',[CoursesController::class, 'getCoursesDetails']);
 Route::post('/Coursesupdate',[CoursesController::class, 'CoursesUpdata']);
 Route::post('/Coursesadd',[CoursesController::class, 'CoursesAdd']);
+
+//admin panel project management
+Route::get('/Project',[ProjectController::class, 'ProjectIndex']);
+ Route::get('/getProjectData', [ProjectController::class, 'getProjectData']);
+ Route::post('/ProjectDetails', [ProjectController::class, 'getProjectDetails']);
+ Route::post('/ProjectUpdate', [ProjectController::class, 'ProjectUpdate']);
+ Route::post('/ProjectDelete', [ProjectController::class, 'ProjectDelete']);
+Route::post('/ProjectAdd', [ProjectController::class, 'ProjectAdd']);
+
+
