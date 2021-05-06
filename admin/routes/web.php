@@ -6,6 +6,7 @@ use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ContactController;
 
 
 Route::get('/',[HomeControll::class, 'HomeIndex']);
@@ -35,5 +36,10 @@ Route::get('/Project',[ProjectController::class, 'ProjectIndex']);
  Route::post('/ProjectUpdate', [ProjectController::class, 'ProjectUpdate']);
  Route::post('/ProjectDelete', [ProjectController::class, 'ProjectDelete']);
 Route::post('/ProjectAdd', [ProjectController::class, 'ProjectAdd']);
+
+// Admin Panel Projects Management 
+Route::get('/Contact', [ContactController::class, 'ContactIndex']);
+Route::get('/getContactData', [ContactController::class, 'getContactData']);
+Route::post('/ContactDelete', [ContactController::class, 'ContactDelete']);
 
 
