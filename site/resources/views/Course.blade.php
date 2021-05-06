@@ -2,5 +2,7 @@
 @extends('Layout.app')
 
 @section('content')
-<h1>Course</h1>
+@include('component.CoursePageTopbanner')
+@include('component.AllCourse')
+
 @endsection

@@ -18,7 +18,7 @@
             </li>
            
             <li class="nav-item">
-                <a class="nav-link nav-font" href="#contact">যোগাযোগ</a>
+                <a class="nav-link nav-font" href="/Contact">যোগাযোগ</a>
             </li>
         </ul>
        
