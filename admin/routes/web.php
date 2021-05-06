@@ -7,6 +7,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ReviewController;
 
 
 Route::get('/',[HomeControll::class, 'HomeIndex']);
@@ -41,5 +42,19 @@ Route::post('/ProjectAdd', [ProjectController::class, 'ProjectAdd']);
 Route::get('/Contact', [ContactController::class, 'ContactIndex']);
 Route::get('/getContactData', [ContactController::class, 'getContactData']);
 Route::post('/ContactDelete', [ContactController::class, 'ContactDelete']);
+
+
+//admin panel service management
+Route::get('/Review', [ReviewController::class, 'ReviewIndex']);
+Route::get('/getReviewData',[ReviewController::class, 'getReviewData']);
+Route::post('/ReviewDetails',[ReviewController::class, 'getReviewDetails']);
+Route::post('/ReviewUpdate',[ReviewController::class, 'ReviewUpdate']);
+Route::post('/ReviewDelete', [ReviewController::class, 'ReviewDelete']);
+Route::post('/ReviewAdd', [ReviewController::class, 'ReviewAdd']);
+
+
+ 
+
+
 
 
