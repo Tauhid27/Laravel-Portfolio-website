@@ -1,5 +1,5 @@
 @extends('Layout.app')
-
+@section('title','Contact')
 @section('content')
 <div class="container-fluid jumbotron mt-5 ">
     <div class="row d-flex justify-content-center">
