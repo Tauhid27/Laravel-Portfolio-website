@@ -88,3 +88,11 @@ margin: 0px  !important;
 	width: 100px;
 	height: auto;
 }
+
+
+.imgPreview{
+    border: none;
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
