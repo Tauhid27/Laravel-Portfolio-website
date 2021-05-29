@@ -96,3 +96,11 @@ margin: 0px  !important;
     object-fit: cover;
     height: 320px;
 }
+
+
+.imgOnRow{
+    border: none !important;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}

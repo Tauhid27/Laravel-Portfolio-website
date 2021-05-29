@@ -59,13 +59,14 @@ Route::post('/ReviewAdd', [ReviewController::class, 'ReviewAdd'])->middleware('l
 
 Route::get('/Login', [LoginController::class, 'LoginIndex']);
 Route::post('/onLogin', [LoginController::class, 'onLogin']);
-Route::get('/Logout', [LoginController::class, 'onLogout']);
+Route::get('/Logout', [LoginController::class, 'onLogout'])->middleware('loginCheck');
 
 //admin photo gallery
-Route::get('/photo', [PhotoController::class, 'PhotoIndex']);
-Route::post('/PhotoUpload', [PhotoController::class, 'PhotoUpload']);
-Route::get('/PhotoJSON', [PhotoController::class, 'PhotoJSON']);
-
+Route::get('/photo', [PhotoController::class, 'PhotoIndex'])->middleware('loginCheck');
+Route::post('/PhotoUpload', [PhotoController::class, 'PhotoUpload'])->middleware('loginCheck');
+Route::get('/PhotoJSON', [PhotoController::class, 'PhotoJSON'])->middleware('loginCheck');
+Route::get('/PhotoJSONByID/{id}', [PhotoController::class, 'PhotoJSONByID'])->middleware('loginCheck');
+Route::post('/PhotoDelete', [PhotoController::class, 'PhotoDelete'])->middleware('loginCheck');
 
 
 
